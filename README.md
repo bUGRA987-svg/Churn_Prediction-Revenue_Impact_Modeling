@@ -133,21 +133,17 @@ Strong recall for the churn class
 
 Balanced predictions without overfitting
 
-Confusion Matrix:
- [[746 289]
- [ 76 298]]
 
 Classification Report:
 
 
-               precision    recall  f1-score   support
-
-           0       0.91      0.72      0.80      1035
-           1       0.51      0.80      0.62       374
-
-    accuracy                           0.74      1409
-   macro avg       0.71      0.76      0.71      1409
-weighted avg       0.80      0.74      0.75      1409
+| Class        | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|---------|---------|
+| 0 (No Churn) | **0.91**  | **0.72** | **0.80** | 1035    |
+| 1 (Churn)    | **0.51**  | **0.80** | **0.62** | 374     |
+| **Accuracy** |           |        | **0.74** | 1409    |
+| Macro Avg    | 0.71      | 0.76   | 0.71    | 1409    |
+| Weighted Avg | 0.80      | 0.74   | 0.75    | 1409    |
 
 **6. Explainable AI (SHAP Analysis)**
 
