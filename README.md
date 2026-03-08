@@ -76,12 +76,9 @@ Model çıktıları doğrudan dolar bazlı bir iş raporuna dönüştürülmüş
 churn-prediction-revenue-impact/
 │
 ├── notebooks/
-│   └── churn_modeling_and_shap_analysis.ipynb  # EDA, CatBoost ve SHAP süreçleri
-│
-├── src/
-│   └── financial_forecasting.py                # CLV ve Gelir kaybı hesaplama scriptleri
+│   └── Churn_Prediction.ipynb  # EDA, CatBoost ve SHAP süreçleri
 │
 ├── data/
-│   └── sample_customer_data.csv                # Örnek veri seti (Maskelenmiş)
+│   └── Customer_Churn DataSet.csv                # Örnek veri seti (Maskelenmiş)
 │
 └── README.md
