@@ -1,11 +1,11 @@
-# 📉 Customer Churn Prediction & Revenue Impact Modeling
+#  Customer Churn Prediction & Revenue Impact Modeling
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![CatBoost](https://img.shields.io/badge/CatBoost-Machine_Learning-orange.svg)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainable_AI-red.svg)
 ![Business-Value](https://img.shields.io/badge/ROI-Revenue_Protection-green.svg)
 
-## 🎯 Executive Summary: "Protecting the Bottom Line"
+##  Executive Summary: "Protecting the Bottom Line"
 Müşteri kaybı (churn), sadece bir veri problemi değil, doğrudan bir gelir problemidir. Bu proje; **CatBoost**, **SHAP (Explainable AI)** ve **Finansal Tahminleme** yöntemlerini kullanarak abonelik tabanlı bir işletmede churn nedenlerini belirlemeyi ve potansiyel gelir kaybını minimize etmeyi hedefler.
 
 **Temel Bulgular:**
@@ -47,7 +47,7 @@ Verideki kategorik değişkenlerin yoğunluğu ve dengesiz sınıf dağılımı 
 
 ---
 
-## 🔍 4. Explainable AI (SHAP Analizi)
+##  4. Explainable AI (SHAP Analizi)
 Modelin "kara kutu" olmaması için SHAP değerleri kullanılmıştır. 
 
 * **Global Önem:** Churn'ü tetikleyen ilk 3 özellik: **Contract Type, Internet Service ve Tenure.**
