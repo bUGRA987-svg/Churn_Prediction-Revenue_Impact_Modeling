@@ -13,7 +13,7 @@ Müşteri kaybı (churn), sadece bir veri problemi değil, doğrudan bir gelir p
 * **CLV Artışı:** Churn oranındaki sadece **%5'lik** bir iyileşme, Müşteri Yaşam Boyu Değeri'ni (CLV) **$244**'ten **$256.89**'a çıkarmaktadır.
 * **Kritik Sinyaller:** En güçlü churn göstergeleri; aylık kontratlar, fiber optik kullanımı ve teknik destek eksikliğidir.
 
----
+
 
 ## 1.  İş Problemi (Business Problem)
 Abonelik modellerinde mevcut bir müşteriyi elde tutmak, yeni bir müşteri kazanmaktan **5 ila 25 kat daha ucuzdur.** Bu proje şu sorulara yanıt arar:
@@ -21,7 +21,7 @@ Abonelik modellerinde mevcut bir müşteriyi elde tutmak, yeni bir müşteri kaz
 2. Ayrılma kararını tetikleyen temel faktörler neler?
 3. Bu kaybın şirkete finansal maliyeti nedir ve nasıl önlenebilir?
 
----
+
 
 ## 2.  Veri Seti ve EDA (Exploratory Data Analysis)
 Veri seti; demografik bilgiler, servis detayları ve finansal metrikleri içermektedir. Yapılan analizlerde öne çıkan başlıklar:
@@ -30,7 +30,7 @@ Veri seti; demografik bilgiler, servis detayları ve finansal metrikleri içerme
 * **Kontrat Tipi:** Aylık kontratlı müşteriler, yıllık kontratlılara göre devasa oranda daha fazla churn etmektedir.
 * **Fiyat Hassasiyeti:** Churn eden müşterilerin ortalama aylık ödemeleri daha yüksektir.
 
----
+
 
 ## 3.  Modelleme Stratejisi & CatBoost
 Verideki kategorik değişkenlerin yoğunluğu ve dengesiz sınıf dağılımı nedeniyle **CatBoost** algoritması tercih edilmiştir.
@@ -45,7 +45,7 @@ Verideki kategorik değişkenlerin yoğunluğu ve dengesiz sınıf dağılımı 
 | **Recall (Churn Class)** | **0.80** (Kritik: Kaçırmamamız gereken müşteriler) |
 | **Accuracy** | 0.74 |
 
----
+
 
 ##  4. Explainable AI (SHAP Analizi)
 Modelin "kara kutu" olmaması için SHAP değerleri kullanılmıştır. 
@@ -53,7 +53,7 @@ Modelin "kara kutu" olmaması için SHAP değerleri kullanılmıştır.
 * **Global Önem:** Churn'ü tetikleyen ilk 3 özellik: **Contract Type, Internet Service ve Tenure.**
 * **Local Explanation:** Bireysel bazda her müşteri için modelin neden "Churn" dediği force-plot'lar ile analiz edilebilir (Örn: Yüksek ücret + Destek hizmeti yok = Churn Riski).
 
----
+
 
 ##  5. Finansal Tahminleme (Revenue Impact)
 Model çıktıları doğrudan dolar bazlı bir iş raporuna dönüştürülmüştür:
@@ -61,7 +61,7 @@ Model çıktıları doğrudan dolar bazlı bir iş raporuna dönüştürülmüş
 * **Riskteki Aylık Gelir:** $213,429
 * **Öneri Sonrası Senaryo:** Churn %5 azaltılırsa toplam portföy değerinde ciddi bir compounding etkisi gözlemlenmiştir.
 
----
+
 
 ##  6. Aksiyon Planı ve Öneriler
 1. **Kontrat Dönüşümü:** Aylık abonelere yıllık paketler için özel indirimler sunulmalı.
@@ -69,7 +69,7 @@ Model çıktıları doğrudan dolar bazlı bir iş raporuna dönüştürülmüş
 3. **Teknik Destek Paketleri:** Online güvenlik ve teknik destek hizmetleri, churn'ü düşürdüğü için bu servisler "bundle" paketlere dahil edilmeli.
 4. **Fiber Optik Segmenti:** Bu gruptaki yüksek churn oranını düşürmek için sadakat ödülleri veya hız güncellemeleri planlanmalı.
 
----
+
 
 ##  Proje Yapısı
 ```text
